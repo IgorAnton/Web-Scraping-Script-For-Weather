@@ -5,7 +5,6 @@ import tkinter as tk
 
 from tkinter import ttk
 
-
 window = tk.Tk()
 window.title("Vremenska Prognoza")
 window.resizable(False,False)
@@ -50,15 +49,7 @@ todayM = todayM + "----------------------------------------\n"
 
 allDaysAhead = results.find_all(class_="w-row")
 
-
-
-
 i = 0
-
-
-
-
-
 
 for nextDay in reversed(allDaysAhead) :
     dayName = nextDay.find(class_="w-col-day").text.strip()
