@@ -62,7 +62,7 @@ i = 0
 
 for nextDay in reversed(allDaysAhead) :
     dayName = nextDay.find(class_="w-col-day").text.strip()
-    dateN   = nextDay.find(class_="w-col-date-date").text.strip()
+    dateN   = nextDay.find(class_="w-col-date-date").text.strip()+"."
     minTemp = nextDay.find(class_="w-col-min").text.strip()
     maxTemp = nextDay.find(class_= "w-col-max").text.strip()
     percipType = nextDay.find(class_= "w-col-summary").text.strip()
